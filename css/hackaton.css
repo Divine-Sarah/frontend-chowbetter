@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Work+Sans:wght@200;300;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EFFEE2C2; 
+     
+}
+/* .wrapper{
+    position: relative;
+    width: 100%;
+} */
+/* .circleleft{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: 120px;
+    left: -60px;
+
+}
+.circleright{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    bottom: 120px;
+    right: -60%;
+    
+} */
+/* .navbar-brand{
+    margin-left: auto;
+} */
+.nav-brands{
+    color: #33691E;
+}
+  .btn{
+    background: #33691E;
+    margin-left: 50%;
+    width: 100px;
+    height: 50px;
+ }
+ .link{
+     margin-left: 45%;
+ }
+ .link a{
+     color: #33691E;
+ }
+ .input{
+     margin-left: 35%;    
+     
+ }
+ .terms{
+     margin-left: 75%;
+ }
+       
