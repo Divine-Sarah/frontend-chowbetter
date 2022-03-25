@@ -138,8 +138,6 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
   grid-gap: 40px;
   padding: 20px;
 }
@@ -174,6 +172,23 @@ a {
   cursor: pointer;
 }
 .ere-seasonal-cards div:nth-child(2) button:hover {
+  background: #51a431;
+  color: white;
+}
+.ere-tab {
+  padding: 30px 20px;
+}
+.ere-tab button {
+  display: inline-block;
+  background: none;
+  border: none;
+  font-style: normal;
+  font-size: 16px;
+  color: black;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.ere-tab button.active {
   background: #51a431;
   color: white;
 }
