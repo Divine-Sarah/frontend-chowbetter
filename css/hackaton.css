@@ -7,6 +7,28 @@ body{
     background-color: #EFFEE2C2; 
      
 }
+.message {
+    display: none;
+}
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.alert {
+    width: 50%;
+    height: 70px;
+    background-color: #33691E;
+    color: white;
+    /* position: relative;
+    top: -10px;
+    left: 100px; */
+    padding: 0 10px;
+    border-radius: 3px;
+}
 /* .wrapper{
     position: relative;
     width: 100%;

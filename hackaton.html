@@ -33,7 +33,7 @@
 
       <div class="account w-100">
         <h2 class="text-capitalize text-center mt-5">create account</h2>
-        <div id="alert"></div>
+        <div id="alert" class="message"></div>
         <form class="form-row m-0">
           <div class="input mb-3 col-md-4">
             <label for="exampleInputEmail1" class="form-label">Name</label>
@@ -134,7 +134,7 @@
         alert.classList.remove('message');
         alert.classList.add('alert');
         alert.innerHTML = `<p class="alert__text">Full name is required!</p>`;   
-        location.focus();    
+        //location.focus();    
         return false;    
     }
     if (data.phoneNumber.length >= 15 || data.phoneNumber.length == "") {    
@@ -172,8 +172,24 @@
           },
           body: JSON.stringify(data),
         })
-          .then((res) => res.json())
-          .then((data) => console.log(data));
+        .then(response => response.json())
+        .then(json => {
+         //Get the message, returned user and token from the response
+         var message = json.message;
+         var user = json.user;
+         //window.localStorage.setItem('aptitudeToken', json.token);
+         window.localStorage.setItem('user', user);
+         alert.classList.remove('message');
+         alert.classList.add('alert');
+         alert.innerHTML = `<p class="alert__text">${message}</p>`;
+
+         if (message === 'User registered successfully') { 
+            setTimeout( ()=>window.location.replace("product.html"), 3000 );
+        }  
+     })   
+     .catch((err) => {
+         console.log("Request failed: ", err);
+     })
       };
     </script>
   </body>
