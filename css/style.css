@@ -4,6 +4,9 @@ body{
     box-sizing: border-box;
     
 }
+button {
+    cursor: pointer;
+}
 .big__div{
     background-color: #51A431;
     color: white;

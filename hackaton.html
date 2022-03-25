@@ -32,8 +32,9 @@
       <!-- logo ends here -->
 
       <div class="account w-100">
-        <h2 class="text-capitalize text-center mt-5">create account</h2>
-        <form class="form-row m-0">
+        <h2 class="text-capitalize text-center mt-5 title">create account</h2>
+        <div id="alert" class="message"></div>
+        <form class="form-row m-0 register">
           <div class="input mb-3 col-md-4">
             <label for="exampleInputEmail1" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" required />
@@ -89,12 +90,14 @@
           </p>
         </div>
       </div>
-      <div class="rights">
-        <p>All rights reserved</p>
-      </div>
-      <div class="terms">
-        <p>Terms of services . Privacy Policy</p>
-      </div>
+      <footer class="footer">
+        <div class="rights">
+          <p>All rights reserved</p>
+        </div>
+        <div class="terms">
+          <p>Terms of services . Privacy Policy</p>
+        </div>
+      </footer>
     </div>
 
     <script
@@ -105,28 +108,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      const registerUser = () => {
-        let data = {};
-        data.name = document.getElementById("name").value;
-        data.phoneNumber = document.getElementById("phoneNumber").value;
-        data.nationalIdentityNumber = document.getElementById("Location").value;
-        data.location = document.getElementById("exampleInputEmail1").value;
-        data.password = document.getElementById("exampleInputPassword1").value;
-
-        console.log(data);
-        const baseURL = "https://chowbetter.herokupp.com/api/auth/register";
-        fetch(baseURL, {
-          method: "POST",
-          headers: {
-            "Content-type": "application/json",
-            "Access-Control-Allow-Origin": "*"
-          },
-          body: JSON.stringify(data),
-        })
-          .then((res) => res.json())
-          .then((data) => console.log(data));
-      };
-    </script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

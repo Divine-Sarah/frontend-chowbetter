@@ -6,6 +6,9 @@ body{
     background-color: #EFFEE2C2; 
      
 }
+button {
+    cursor: pointer;
+}
 .nav-brands{
     color: #33691E;
 }
