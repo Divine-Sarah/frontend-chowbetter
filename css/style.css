@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.big__div{
+    background-color: #51A431;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.big__div button{
+    border: none;
+    background: white;
+    color: #51A431;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+/* .parent__div{
+    background-image: url("./assets/img/yam.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 20px;
+
+} */
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

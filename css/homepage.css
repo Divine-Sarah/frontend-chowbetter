@@ -6,24 +6,32 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
-    height: 2rem;
+    height: 100px;
     position: fixed;
-    top: 0px;
+    top: -20px;
     left: 0px;
     right: 0px;
-
+    width: 100%;
+    background-color: none;
 }
 li{
     list-style-type: none;
     margin: 0px 0.5rem;
+    position: relative;
+    top: 20px;
 }
 
 ul{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 }
 a{
     text-decoration: none;
     color: black;
+    position: relative;
+    top: -20px;
 }
 
 li a:hover{
