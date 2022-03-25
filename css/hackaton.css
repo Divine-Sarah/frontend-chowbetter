@@ -21,7 +21,7 @@ button {
     height: auto;
 }
 .alert {
-    width: 50%;
+    width: 400px;
     height: 70px;
     background-color: #33691E;
     color: white;
@@ -118,5 +118,8 @@ button {
         margin-left: 30%; 
         margin-top: 15px;
         margin-bottom: 15px;
+     }
+     .alert {
+        width: 270px;
      }
  }
