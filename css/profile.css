@@ -1,0 +1,32 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    height: 2rem;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+nav li{
+    list-style-type: none;
+    margin:0px 0.5rem;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+nav li a:hover {
+    color: #3ca813;
+}
+.navbar-brand img {
+    height: 60px;
+}
+.icons span{
+    color: #EBC351;
+}
+.farmer img {
+    height: 180px;
+}
