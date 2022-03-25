@@ -231,3 +231,116 @@ a {
   font-size: 12px;
   margin: 8px 0;
 }
+footer {
+  background-color: #3ca813;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 32px 25px;
+  justify-content: space-between;
+}
+footer h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+}
+footer p {
+  color: #ffffff;
+  margin: 0;
+}
+footer > div {
+  width: 20%;
+}
+footer > div:first-child .footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer > div:first-child .footer-logo img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+footer > div:first-child .footer-logo p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-left: 8px;
+}
+footer > div:first-child > p:first-of-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  margin: 5px 0 10px 0px;
+}
+footer > div:first-child > p:last-of-type {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  margin: 5px 0 10px 0px;
+}
+footer > div:first-child input {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+}
+footer > div:nth-child(2) ul {
+  padding: 8px 0 0 15px;
+}
+footer > div:nth-child(2) ul li {
+  color: white;
+}
+footer > div:nth-child(2) ul li a {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+
+  letter-spacing: 0.04em;
+}
+footer > div:nth-child(3) > div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+footer > div:nth-child(3) > div:first-of-type img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+footer > div:nth-child(3) p {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+footer > div:nth-child(3) p:first-of-type {
+  margin-bottom: 8px;
+}
+footer > div:nth-child(4) > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 18px;
+}
+footer > div:nth-child(4) > div img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 10px;
+}
