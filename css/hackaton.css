@@ -25,6 +25,9 @@ button {
     height: 70px;
     background-color: #33691E;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* position: relative;
     top: -10px;
     left: 100px; */
