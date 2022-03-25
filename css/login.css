@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Work+Sans:wght@200;300;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #effee2;
+}
+.form {
+    margin-right: 90px;
+    width: 23%;
+    color: #000;
+    position: absolute;
+    top: 20px;
+    left: 520px;
+    font-weight: 300;
+}
+.forgot {
+    margin-left: 200px;
+    font-weight: 300;
+}
+.forgot a {
+    text-decoration: none;
+    color: grey;
+}
+.btn {
+    background-color: #3ca813;
+    color: #fff;
+    margin-left: 37%;
+    margin-top: 20px;
+}
+.btn:hover {
+    color: white;
+}
+.acct a {
+    color:  #3ca813;
+    font-weight: 300;
+}
+.terms {
+    float: right;
+    margin-bottom: 70px;
+    font-weight: 300;
+}
