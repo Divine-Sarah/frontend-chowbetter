@@ -76,7 +76,7 @@ if(data.password != data.confirm)  {
      alert.innerHTML = `<p class="alert__text">${message}</p>`;
 
      if (message === 'User registered successfully') { 
-        setTimeout( ()=>window.location.replace("product.html"), 3000 );
+        setTimeout( ()=>window.location.replace("./product.html"), 3000 );
     }  
  })   
  .catch((err) => {
