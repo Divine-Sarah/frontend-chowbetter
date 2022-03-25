@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 a {
   text-decoration: none;
@@ -120,6 +120,60 @@ a {
 
 .ere-jumbo-slide div button:hover {
   border: none;
-  background-color:#e5f8de;
+  background-color: #e5f8de;
 }
 
+.ere-seasonal-produce {
+  width: 100%;
+  padding: 0 50px;
+}
+.ere-seasonal-produce h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  color: #070d01;
+}
+.ere-seasonal-card-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 40px;
+  padding: 20px;
+}
+.ere-seasonal-cards {
+  width: 350px;
+}
+.ere-seasonal-cards div:first-child {
+  width: 350px;
+  height: 276px;
+}
+.ere-seasonal-cards div:first-child img {
+  width: 350px;
+  height: 276px;
+  object-fit: cover;
+}
+.ere-seasonal-cards div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ere-seasonal-cards div:nth-child(2) button {
+  display: inline-block;
+  width: 164px;
+  background: none;
+  border: 1px solid #51a431;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #51a431;
+  padding: 20px;
+  cursor: pointer;
+}
+.ere-seasonal-cards div:nth-child(2) button:hover {
+  background: #51a431;
+  color: white;
+}
