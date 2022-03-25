@@ -192,3 +192,42 @@ a {
   background: #51a431;
   color: white;
 }
+.ere-product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  padding: 20px;
+}
+.ere-product {
+  width: 150px;
+  position: relative;
+}
+.ere-product > div:first-child {
+  width: 150px;
+  height: 150px;
+}
+.ere-product > div:first-child img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.ere-product > div:last-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 20px;
+}
+.ere-product > div:last-child button {
+  background: #bbf9a3;
+  border: none;
+  position: absolute;
+  top: -20px;
+  padding: 12px;
+}
+.ere-product > div:last-child p {
+  font-size: 12px;
+  margin: 8px 0;
+}
