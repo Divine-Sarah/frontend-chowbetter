@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5e5e5;
+}
+a {
+  text-decoration: none;
+}
+
+.w-full {
+  width: 100%;
+}
+.ere-container {
+  width: 100%;
+  position: relative;
+}
+.ere-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 20px;
+}
+.ere-nav .logo {
+  width: 20%;
+}
+.ere-nav .logo a {
+  display: flex;
+  flex-direction: row;
+}
+.ere-nav .logo a div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ere-nav .logo a div img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.ere-nav .logo a div > span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #070d01;
+  margin-left: 10px;
+}
+.ere-nav .logo a div span:first-child {
+  color: #3ca813;
+}
+.ere-nav ul {
+  width: 60%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ere-nav ul li a {
+  display: block;
+  padding: 10px 30px;
+  color: #070d01;
+}
+.ere-nav ul li a.active {
+  color: #3ca813;
+}
+.ere-nav .nav-icon {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.ere-nav .nav-icon a {
+  display: block;
+}
+.ere-nav .nav-icon a:first-child {
+  margin-right: 40px;
+}
+.ere-jumbo-slide {
+  width: 100%;
+  background-color: #51a431;
+  padding: 145px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ere-jumbo-slide p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  color: #ffffff;
+  text-align: center;
+}
+.ere-jumbo-slide div button {
+  border: none;
+  background-color: #fff;
+  padding: 12px 50px;
+  width: 298px;
+  height: 80px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  color: #3ca813;
+  cursor: pointer;
+}
+
+.ere-jumbo-slide div button:hover {
+  border: none;
+  background-color:#e5f8de;
+}
+
