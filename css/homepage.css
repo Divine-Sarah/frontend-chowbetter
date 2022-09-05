@@ -51,7 +51,7 @@ a{
 }
 
 li a:hover{
-  color: #33691E;
+  color: #777;
 }
 .mt-3 button{
     background-color: #33691E;
@@ -60,6 +60,10 @@ li a:hover{
     /* width: 50%; */
     border-radius: 10px;
 }
+.mt-3 button:hover {
+    color: #fff;
+}
+
 .search input{
     /* margin-top: 150px;
     margin-left: 200px; */
@@ -128,6 +132,10 @@ a:hover - a link when the user mouses over it
 a:active - a link the moment it is clicked */
 
 @media(max-width: 760px) {
+    nav {
+        position: relative;
+    }
+
     .hamburger-icon {
         display: block;
     }
