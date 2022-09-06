@@ -1,5 +1,5 @@
 body{
-    background-color: #EFFEE2C2; 
+    background-color: #EFFEE2C2;
      
 }
 button {
@@ -8,47 +8,66 @@ button {
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5rem;
     height: 100px;
-    position: fixed;
-    top: -20px;
-    left: 0px;
-    right: 0px;
+    /* position: fixed; */
+    position: sticky;
+    /* top: -20px; */
+    top: 0;
+    /* left: 0px;
+    right: 0px; */
     width: 100%;
     background-color: none;
 }
+
+.hamburger-icon {
+    display: none;
+}
+
+.mobile-links {
+    display: none;
+}
+
 li{
     list-style-type: none;
-    margin: 0px 0.5rem;
-    position: relative;
-    top: 20px;
+    margin: 0 0.5rem;
+    /* position: relative; */
+    /* top: 20px; */
 }
 
 ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
+    position: relative;
+    /* flex-direction: row; */
 }
 a{
     text-decoration: none;
     color: black;
     position: relative;
-    top: -20px;
+    /* top: -20px; */
 }
 
 li a:hover{
-  color: #33691E;
+  color: #777;
 }
 .mt-3 button{
     background-color: #33691E;
     height: 50px;
-    width: 50%;
+    color: #fff;
+    /* width: 50%; */
     border-radius: 10px;
 }
-.search{
-    margin-top: 150px;
-    margin-left: 200px;
+.mt-3 button:hover {
+    color: #fff;
+}
+
+.search input{
+    /* margin-top: 150px;
+    margin-left: 200px; */
+    margin: 0 auto;
     width: 800px;
     color: #33691E;
 }
@@ -59,32 +78,40 @@ li a:hover{
 }
 .color h3{
     color: white;
-    margin-left: 35%;
-    margin-bottom: 50px;
+    text-align: center;
+    /* margin-left: 35%;
+    margin-bottom: 50px; */
     
 }
 .hey h2{
-    margin-left: 40%;
+    text-align: center;
+    /* margin-left: 40%; */
     margin-top: 50px ;
 }
 .picture{
     margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 h4{
     margin-top: 50px;
     margin-left: 50px;
 }
 .row{
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: space-evenly;
 }
 .card{
-    background-color: inherit;
-    
+    /* background-color: inherit; */
+    background-color: #EFFEE2C2;
+    position: relative;
+    z-index: -1;
 }
 .cards{
     color: white
@@ -96,9 +123,86 @@ h4{
 .green{
     width: 100%;
     height: 200px;
-    background-color: #33691E; 
+    background-color: #33691E;
+    margin-top: 2rem; 
 }
 /* a:link - a normal, unvisited link
 a:visited - a link the user has visited
 a:hover - a link when the user mouses over it
 a:active - a link the moment it is clicked */
+
+@media(max-width: 760px) {
+    nav {
+        position: relative;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .hamburger-icon.active {
+        display: block;
+    }
+
+    .mobile-links {
+        display: block;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .mobile-links.active {
+        height: 250px;
+        transition: 0.5s;
+    }
+
+    .mobile-links a {
+        display: block;
+        margin: 1.2rem 0;
+    }
+
+    .mobile-links .btn {
+        background-color: #33691E;
+        padding: 0.45rem 1rem;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .picture {
+        flex-direction: column;
+    }
+
+    .picture img {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .row .card {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    h4 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
